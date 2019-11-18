@@ -46,7 +46,7 @@ class AdministratorController < ApplicationController
   end
 
   # Displays form to add a chosen number of points
-  def edit_points
+  def add_points
       @admin = Administrator.find params[:id]
   end
 

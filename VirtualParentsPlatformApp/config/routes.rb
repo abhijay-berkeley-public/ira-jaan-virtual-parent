@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :administrators do
       resources :activities, :rewards
   end
-  get 'administrators/:id/points', to: 'administrators#edit_points', as: :admin_points
+  get 'administrators/:id/points', to: 'administrators#add_points', as: :admin_points
   put 'administrators/:id/points', to: 'administrators#update_points'
 
   # ChildController
